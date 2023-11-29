@@ -3,6 +3,19 @@ const navToggle = document.querySelector("#nav-toggle");
 const navClose = document.querySelector("#nav-close");
 const navLink = document.querySelectorAll(".nav__link");
 const sections = document.querySelectorAll("section");
+const video = document.querySelector("video");
+const videoContainer = document.querySelector(".video__container");
+
+/*=============== VIDEO RESPONSIVENESS ===============*/
+
+window.addEventListener("load", () => {
+  let size = videoContainer.clientWidth;
+  video.width = size;
+});
+window.addEventListener("resize", () => {
+  let size = videoContainer.clientWidth;
+  video.width = size;
+});
 
 /*=============== TOGGLE MENU ===============*/
 
@@ -147,18 +160,32 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  ".home__data, .projects__container, .testimonial__container, .footer__container"
+  ".home__data, .projects__container, .testimonial__container, .footer__container .video__container"
 );
-sr.reveal(".home__info div", { delay: 400, origin: "bottom", interval: 100 });
-sr.reveal(".skills__content:nth-child(1), .contact__content:nth-child(1)", {
-  origin: "left",
+sr.reveal(".home__info div, .video__container", {
+  delay: 400,
+  origin: "bottom",
+  interval: 100,
 });
-sr.reveal(".skills__content:nth-child(2), .contact__content:nth-child(2)", {
-  origin: "right",
-});
-sr.reveal(".qualification__content, .services__card", { interval: 100 });
+sr.reveal(
+  ".section__two__content:nth-child(1), .contact__content:nth-child(1), .curriculum div",
+  {
+    origin: "left",
+  }
+);
+sr.reveal(
+  ".section__two__content:nth-child(2), .partner__content, .admission__content",
+  {
+    origin: "right",
+  }
+);
+sr.reveal(
+  ".qualification__container div, .services__card, .about__us__container, .about__program__container",
+  { interval: 100 }
+);
 
 /*=============== SWIPER TESTIMONIAL ===============*/
+
 window.onscroll = () => {
   var current = "";
 
@@ -167,7 +194,7 @@ window.onscroll = () => {
     if (pageYOffset >= sectionTop) {
       current = section.getAttribute("id");
     }
-    console.log(current);
+    // console.log(current);
   });
 
   navLink.forEach((list) => {

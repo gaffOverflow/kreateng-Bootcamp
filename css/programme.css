@@ -63,7 +63,7 @@
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 3rem;
-     --h1-font-size: 2rem;
+    --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: .8rem;
@@ -199,13 +199,12 @@ body.dark-theme {
 }
 
 .section {
-  padding-block: 1rem;
-
+  padding-block: 2.5rem;
 }
 
 .section__border {
   border-bottom: 1px solid var(--title-color);
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .section__title,
@@ -216,7 +215,7 @@ body.dark-theme {
 .section__title {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
-  /* margin-bottom: 0.25rem; */
+  margin-bottom: 0.25rem;
 }
 
 .section__subtitle {
@@ -231,6 +230,7 @@ body.dark-theme {
 }
 
 /*=============== HEADER & NAV ===============*/
+
 .header {
   width: 100%;
   position: fixed;
@@ -336,6 +336,217 @@ body.dark-theme {
   border-bottom: 2px solid var(--title-color);
 }
 
+/* ======= PROGRAM PAGE HERO ====== */
+
+.page__hero__bg {
+  background: url("./software.jpg") no-repeat center/cover;
+  height: 40dvh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  gap: 1.5rem;
+}
+
+.page__hero__bg p {
+  color: rgb(37, 34, 34);
+  font-size: var(--h2-font-size);
+  font-weight: 900;
+  padding: 4rem;
+  background: linear-gradient(
+    to right,
+    rgba(13, 13, 13, 0.2),
+    rgba(225, 220, 220, 0.2)
+  );
+
+  border-radius: 4px;
+}
+
+/*=============== ABOUT PROGRAM ===============*/
+
+.about__program {
+  position: relative;
+}
+
+.about__program__container {
+  gap: 1.5rem;
+  margin-block: 2.5rem;
+}
+
+.about__program__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2rem;
+}
+
+.about__program__container div p::first-letter {
+  color: var(--title-color);
+  font-size: var(--h2-font-size);
+}
+
+/* ========= CURRICULUM ======== */
+
+.curriculum__data {
+  background: var(--container-color);
+  padding: 1rem;
+  font-size: var(--normal-font-size);
+}
+
+.curriculum__data h1{
+  text-align: center;
+  font-size: var(--h1-font-size);
+}
+
+.curriculum__card__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+
+}
+
+.curriculum__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  
+}
+
+.curriculum__card img{
+  aspect-ratio: 2/1;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+.curriculum__card button{
+  display: flex;
+  place-content: center;
+  gap: .2rem;
+  background: none;
+  border: none;
+  color: var(--title-color);
+  transition: .2s;
+  cursor: pointer;
+}
+
+.curriculum__card button:hover{
+gap: .6rem;
+}
+
+
+/*=============== MODAL ===============*/
+
+table td{
+  border: 3px solid var(--container-color);
+  padding: 1rem;
+}
+table td p{
+  padding-top: .4rem;
+}
+
+table th{
+background: var(--container-color);
+padding: 2rem;
+/* text-wrap: nowrap; */
+}
+
+
+/* ========= ADMISSION ========= */
+
+.admission__data {
+  background: var(--container-color);
+  padding: 1rem;
+  font-size: var(--normal-font-size);
+}
+
+.admission__data h1{
+  text-align: center;
+  font-size: var(--h1-font-size);
+}
+
+.admission__data > p{
+  font-size: var(--h3-font-size);
+  line-height: 1.5rem;
+} 
+
+.admission__data ul span{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1.3rem;
+  display: block;
+}
+
+.admission__data ul li{
+  margin: 1rem 2rem;
+}
+
+.admission__data div p{
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.admission__data div button{
+  padding: .7em 2em;
+  margin-block: 1rem;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
+  transition: .3s;
+  cursor: pointer;
+}
+
+.admission__data div button:hover{
+  color: black;
+}
+
+/* ======= FINANCE ========== */
+
+.financing__data {
+  background: var(--container-color);
+  padding: 1rem;
+  font-size: var(--normal-font-size);
+}
+
+.financing__data h1{
+  text-align: center;
+  font-size: var(--h1-font-size);
+}
+
+.financing__data > p{
+  font-size: var(--h3-font-size);
+  line-height: 1.5rem;
+} 
+
+/*=============== SECTION 2 ===============*/
+
+.section__two__content {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  gap: 2rem;
+  background: var(--container-color);
+  padding: 1rem;
+}
+
+.img__container {
+  display: grid;
+  place-content: center;
+}
+
+.section__two__container div img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+
 /*=============== HOME ===============*/
 
 .home__container {
@@ -360,30 +571,14 @@ body.dark-theme {
 
 /*=============== SECTION 2 ===============*/
 
-.section__two__content {
-  display: flex;
-  flex-direction: column;
-  place-content: center;
-  gap: 2rem;
-  background: var(--container-color);
-  padding: 1rem;
-}
 
-.img__container {
-  display: grid;
-  place-content: center;
-}
 
-.section__two__container div img {
-  border-radius: 50%;
-  width: 100%;
-}
 
 /* .section__two__data{
   display: gri;
 } */
 
-@keyframes bounce-skills {
+@keyframes bounce {
   0% {
     transform: translate(0);
   }
@@ -434,48 +629,6 @@ body.dark-theme {
 }
 
 .qualification__img {
-  width: 150px;
-  position: absolute;
-  right: -3rem;
-  bottom: 12rem;
-  transform: rotate(15deg);
-  opacity: 0.1;
-}
-
-/*=============== ABOUT US ===============*/
-
-.about__us {
-  position: relative;
-}
-
-.about__us__container {
-  gap: 1.5rem;
-  margin-block: 2.5rem;
-}
-
-.about__us__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold);
-  margin-bottom: 2rem;
-}
-
-.about__us__container div iconify-icon {
-  font-size: 1rem;
-  font-weight: initial;
-  color: var(--title-color);
-}
-
-.edu-img {
-  width: 100%;
-  aspect-ratio: 2/1;
-  object-fit: center;
-}
-
-.about__us__img {
   width: 150px;
   position: absolute;
   right: -3rem;
@@ -715,6 +868,10 @@ body.dark-theme {
   align-items: center;
 }
 
+* {
+  /* outline: 1px solid red; */
+}
+
 /* ========== partner hero card =========== */
 
 .partner__hero__container {
@@ -781,38 +938,6 @@ body.dark-theme .card__partner {
 .partner__svg {
   width: 5rem;
   aspect-ratio: 2/1;
-}
-
-/* ======= faq ====== */
-
-.faq__bg {
-  background: url("./software.jpg") no-repeat center/cover;
-  height: 40dvh;
-  width: 100%;
-  display: grid;
-  place-content: center;
-  gap: 1.5rem;
-}
-
-.faq__bg p {
-  color: rgb(37, 34, 34);
-  font-size: var(--h2-font-size);
-  font-weight: 800;
-}
-
-.faq__bg button {
-  padding: 0.7rem;
-  font-size: var(--small-font-size);
-  font-weight: 600;
-  color: #181515;
-  background: var(--gradient-color);
-  border: none;
-  border-radius: 2px;
-  transition: 0.01s linear;
-}
-
-.faq__bg button:hover {
-  outline: 2px solid var(--title-color);
 }
 
 /* faq summaruy & details */
@@ -1089,6 +1214,16 @@ details > p {
     width: 50%;
   }
 
+  /* ======= MODAL ======== */
+
+table{
+  margin: 3rem;
+}
+
+table th{
+  text-wrap: nowrap;
+}
+
   /* ======= SECTION TWO ======== */
 
   .section__two__content {
@@ -1108,7 +1243,7 @@ details > p {
 
   /* ======== QUALIFICATION ====== */
 
-  .about__us__container {
+  .about__program__container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1207,6 +1342,10 @@ details > p {
 
   .dark-theme .bg-header {
     box-shadow: 0 6px 24px hsla(207, 24%, 8%, 0.6);
+  }
+
+  .page__hero__bg{
+    height: 45dvh;
   }
 }
 

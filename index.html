@@ -9,19 +9,19 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/img/favicon/apple-touch-icon.png"
+      href="./kreateng/kreateng-logo-png-small.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/img/favicon/favicon-32x32.png"
+      href="./kreateng/kreateng-logo-png-small.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/img/favicon/favicon-16x16.png"
+      href="./kreateng/kreateng-logo-png-small.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
 
@@ -41,6 +41,20 @@
 
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
 
+    <!-- FAVICON -->
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+    <!-- FAVICON -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- SWIPER CSS -->
 
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -58,7 +72,10 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo"
-          ><img src="./kreateng/kreateng-logo-png-wide.png" alt=""
+          ><img
+            src="./kreateng/kreateng-logo-png-wide.png"
+            alt=""
+            class="kreateng__logo"
         /></a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
@@ -70,19 +87,21 @@
               </a>
             </li>
 
-            <!--Skill nav__item -->
-
             <li class="nav__item">
-              <a href="#skills" class="nav__link skills">
-                <i class="ri-trophy-line"></i> Skills
+              <a href="programme.html" class="nav__link programme">
+                <i class="ri-brain-line"></i> Programme
               </a>
             </li>
 
+            <!--Skill nav__item -->
+
             <!-- Qualification nav__item -->
 
+            <!-- About us nav__item -->
+
             <li class="nav__item">
-              <a href="#qualification" class="nav__link qualification">
-                <i class="ri-book-open-line"></i> Qualification
+              <a href="#about__us" class="nav__link about__us">
+                <i class="ri-book-open-line"></i> About
               </a>
             </li>
 
@@ -97,20 +116,20 @@
             <!-- Projects nav__item -->
 
             <li class="nav__item">
-              <a href="#projects" class="nav__link projects">
-                <i class="ri-image-line"></i> Projects
+              <a href="#testimonial" class="nav__link testimonial">
+                <i class="ri-image-line"></i> Testimonial
               </a>
             </li>
 
             <!-- Contact nav__item -->
 
             <li class="nav__item">
-              <a href="#contact" class="nav__link contact">
-                <i class="ri-chat-3-line"></i> Contact
+              <a href="#partner" class="nav__link partner">
+                <i class="ri-chat-3-line"></i> Partner
               </a>
             </li>
 
-            <li class="nav__item">
+            <!-- <li class="nav__item">
               <a
                 href="./assets/img/New folder/Gaffar's Resume.pdf"
                 download
@@ -128,7 +147,7 @@
                 </i>
                 Resume
               </a>
-            </li>
+            </li> -->
           </ul>
 
           <!-- Close Button -->
@@ -156,8 +175,10 @@
       <!--  HOME  -->
 
       <section class="home section" id="home">
-        <div class="home__container container flex-col section__border">
-          <div>
+        <div
+          class="home__container container flex section__border flex-row-col"
+        >
+          <div class="home__data grid">
             <h2>
               Become a world class Software Engineer, and attract high paying
               jobs in just 6 months.
@@ -171,194 +192,34 @@
               <button>Learn more</button>
             </div>
           </div>
-          <div>
-          <video controls="controls" preload='none' width="500" >
-            <source src="" type="video/mp4" />
-          </video>
-        </div>
+          <div class="grid video__container">
+            <video controls="controls" preload="none" width="" class="img grid">
+              <source src="" type="video/mp4" class="grid video" />
+            </video>
+          </div>
         </div>
       </section>
 
-      <!--  SKILLS  -->
-      <!--  SKILLS  -->
-      <!--  SKILLS  -->
-      <!--  SKILLS  -->
-      <!--  SKILLS  -->
+      <!--  SECTION TWO  -->
 
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My favorite skills</span>
+      <section class="section__two section" id="home">
+        <!-- section-two Set -->
+        <div class="section__two__container container section__border">
+          <!-- section-two 1 -->
 
-        <!-- Skills Set -->
-        <div class="skills__container container grid section__border">
-          <!-- Skills 1 -->
-
-          <div class="skills__content">
-            <h3 class="skills__title">
-              <i class="ri-braces-line"></i> Frontend Developer
-            </h3>
-            <div class="skills__info">
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img src="assets/img/html-1.svg" alt="skills image" />
-                </div>
-
-                <h3 class="skills__name">HTML</h3>
-                <span class="skills__subtitle">Advance</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img src="assets/img/css-3.svg" alt="skills image" />
-                </div>
-
-                <h3 class="skills__name">CSS</h3>
-                <span class="skills__subtitle">Advance</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img
-                    src="assets/img/logo-javascript.svg"
-                    alt="skills image"
-                  />
-                </div>
-
-                <h3 class="skills__name">JavaScript</h3>
-                <span class="skills__subtitle">Intermediate</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img src="assets/img/bootstrap-icon.svg" alt="skills image" />
-                </div>
-
-                <h3 class="skills__name">Bootstrap</h3>
-                <span class="skills__subtitle">Intermediate</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img src="assets/img/tailwindcss.svg" alt="skills image" />
-                </div>
-
-                <h3 class="skills__name">Tailwind</h3>
-                <span class="skills__subtitle">Advance</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img src="assets/img/react-2.svg" alt="skills image" />
-                </div>
-
-                <h3 class="skills__name">React</h3>
-                <span class="skills__subtitle">Intermediate</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img src="assets/img/git-icon.svg" alt="skills image" />
-                </div>
-
-                <h3 class="skills__name">GIT</h3>
-                <span class="skills__subtitle">Intermediate</span>
-              </div>
+          <div class="section__two__content">
+            <div class="img__container">
+              <img src="./kreateng/dummy 1.png" alt="" />
             </div>
-          </div>
-
-          <!-- Skills 2 -->
-
-          <div class="skills__content">
-            <h3 class="skills__title">
-              <i class="ri-wordpress-line"></i> WordPress Dev & Graphics
-            </h3>
-
-            <div class="skills__info">
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img src="assets/img/woocommerce-1.svg" alt="skills image" />
-                </div>
-
-                <h3 class="skills__name">Woo</h3>
-                <span class="skills__subtitle">Advance</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img
-                    src="assets/img/Elementor-Logo-Symbol-Red.svg"
-                    alt="skills image"
-                  />
-                </div>
-
-                <h3 class="skills__name">Elementor</h3>
-                <span class="skills__subtitle">Advance</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img
-                    src="assets/img/google-analytics-4.svg"
-                    alt="skills image"
-                  />
-                </div>
-
-                <h3 class="skills__name">Google.A</h3>
-                <span class="skills__subtitle">Advance</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img src="assets/img/figma-1.svg" alt="skills image" />
-                </div>
-
-                <h3 class="skills__name">Figma</h3>
-                <span class="skills__subtitle">Basic</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img src="assets/img/picsarts-new.webp" alt="skills image" />
-                </div>
-
-                <h3 class="skills__name">PicsArt</h3>
-                <span class="skills__subtitle">Intermediate</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img src="assets/img/canva-1.svg" alt="skills image" />
-                </div>
-
-                <h3 class="skills__name">Canvas</h3>
-                <span class="skills__subtitle">Intermediate</span>
-              </div>
-
-              <!--  -->
-              <div class="skills__data">
-                <div class="skills__blob">
-                  <img
-                    src="assets/img/adobe-photoshop-2.svg"
-                    alt="skills image"
-                  />
-                </div>
-
-                <h3 class="skills__name">Photo Shop</h3>
-                <span class="skills__subtitle">Basic</span>
-              </div>
+            <div class="section__two__data grid">
+              <h1>Become Like Mary Etukudo</h1>
+              <p>
+                Coming to Decagon has helped me build a career in Software
+                Engineering. It's been 3 years and I can confidently say I made
+                the right decision.
+              </p>
+              <h5>Mary Etokwudo</h5>
+              <span>Senior Software Engineer, Indeed(USA)</span>
             </div>
           </div>
         </div>
@@ -366,78 +227,79 @@
 
       <!--  QUALIFICATION  -->
 
-      <section class="qualification section" id="qualification">
-        <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">Experience & Education</span>
+      <section class="qualification section" id="home">
+        <h2 class="section__title">
+          Why Kreateng Bootcamp is the #1 choice for you
+        </h2>
+        <span class="section__subtitle"
+          >Kreateng BootCamp for sure the best for you</span
+        >
 
-        <!--  QUALIFICATION  CONTAINER  -->
+        <!--  WHY KREATENG  CONTAINER  -->
 
         <div class="qualification__container container grid section__border">
           <!--  Qualification 1 -->
-          <div class="qualification__content">
-            <h3 class="qualification__title">
-              <i class="ri-pen-nib-line"></i>
-              Education
-            </h3>
 
-            <div class="qualification__info">
-              <!-- Qualification Information 1-->
-              <div>
-                <h3 class="qualification__name">
-                  Frontend Development Certification
-                </h3>
-                <span class="qualification__country">Zuri</span>
-                <span class="qualification__year">2022</span>
-              </div>
-
-              <!-- Qualification Information 2-->
-              <div>
-                <h3 class="qualification__name">Bsc</h3>
-                <span class="qualification__country"
-                  >University of Nigeria Nsukka</span
-                >
-                <span class="qualification__year">2016 - 2019</span>
-              </div>
-
-              <!-- Qualification Information 3-->
-              <div>
-                <h3 class="qualification__name">National Diplomat</h3>
-                <span class="qualification__country"
-                  >Yaba College of Technology</span
-                >
-                <span class="qualification__year">2012 - 2015</span>
-              </div>
-
-              <!-- Qualification Information 4-->
-              <!-- <div>
-                <h3 class="qualification__name"></h3>
-                <span class="qualification__country"></span>
-                <span class="qualification__year"></span>
-              </div> -->
-            </div>
+          <div class="grid">
+            <iconify-icon icon="octicon:location-24"></iconify-icon>
+            <h3>We give you all you need to excel</h3>
+            <p>
+              During the core learning period (First 4 Months of the program),
+              we provide Accommodation, Feeding, Electricity, Internet, and
+              Laptop Lease.
+            </p>
+            <span
+              >During Internships (The last 2 Months of the program) which are
+              taken remotely, we provide stipend to support our students.
+            </span>
           </div>
 
-          <!--  Qualification 2 -->
-          <div class="qualification__content">
-            <h3 class="qualification__title">
-              <i class="ri-building-line"></i> Work
-            </h3>
+          <!--  Qualification 1 -->
 
-            <div class="qualification__info">
-              <!-- info 1 -->
-              <div>
-                <h3 class="qualification__name">Frontend Developer</h3>
-                <span class="qualification__country">Zuri-Intership</span>
-                <span class="qualification__year">2022</span>
-              </div>
+          <div class="grid">
+            <iconify-icon icon="octicon:location-24"></iconify-icon>
+            <h3>We give you all you need to excel</h3>
+            <p>
+              During the core learning period (First 4 Months of the program),
+              we provide Accommodation, Feeding, Electricity, Internet, and
+              Laptop Lease.
+            </p>
+            <span
+              >During Internships (The last 2 Months of the program) which are
+              taken remotely, we provide stipend to support our students.
+            </span>
+          </div>
 
-              <!-- info 2 -->
-              <div>
-                <h3 class="qualification__name">WordPress Developer</h3>
-                <span class="qualification__country">Freelance</span>
-                <span class="qualification__year">2023</span>
-              </div>
-            </div>
+          <!--  Qualification 1 -->
+
+          <div class="grid">
+            <iconify-icon icon="octicon:location-24"></iconify-icon>
+            <h3>We give you all you need to excel</h3>
+            <p>
+              During the core learning period (First 4 Months of the program),
+              we provide Accommodation, Feeding, Electricity, Internet, and
+              Laptop Lease.
+            </p>
+            <span
+              >During Internships (The last 2 Months of the program) which are
+              taken remotely, we provide stipend to support our students.
+            </span>
+          </div>
+
+          <!--  Qualification 1 -->
+
+          <div class="grid">
+            <iconify-icon icon="octicon:location-24"></iconify-icon>
+            <h3>We give you all you need to excel</h3>
+            <p>
+              During the core learning period (First 4 Months of the program),
+              we provide Accommodation, Feeding, Electricity, Internet, and
+              Laptop Lease.
+            </p>
+            <span
+              >During Internships (The last 2 Months of the program) which are
+              taken remotely, we provide stipend to support our students.
+            </span>
           </div>
         </div>
 
@@ -448,24 +310,50 @@
         />
       </section>
 
+      <!-- ABOUT US -->
+
+      <section class="about__us section" id="about__us">
+        <h2 class="section__title">About the Institute</h2>
+
+        <!--  WHY KREATENG  CONTAINER  -->
+
+        <div class="about__us__container container grid section__border">
+          <!--  Qualification 1 -->
+          <img src="./kreateng/webb-kreateng-768x768.jpg" alt="kreateng img" />
+          <div class="grid">
+            <h3>We give you all you need to excel</h3>
+            <p>
+              During the core learning period (First 4 Months of the program),
+              we provide Accommodation, Feeding, Electricity, Internet, and
+              Laptop Lease.
+            </p>
+            <span
+              >During Internships (The last 2 Months of the program) which are
+              taken remotely, we provide stipend to support our students.
+            </span>
+          </div>
+        </div>
+      </section>
+
       <!--  SERVICES  -->
 
       <section class="services section" id="services">
-        <h2 class="section__title">Services</h2>
-        <span class="section__subtitle">What I offer</span>
+        <h2 class="section__title">Kreateng Bootcamp Services</h2>
+        <span class="section__subtitle">What we offer</span>
 
         <div class="services__container container grid section__border">
           <!-- services card 1 -->
           <div class="services__card">
             <i class="ri-wordpress-fill"></i>
             <h2 class="services__title">
-              WordPress <br />
-              Developer
+              Kreateng <br />
+              Bootcamp
             </h2>
 
             <p class="services__description">
-              Experienced WordPress developer. Custom themes, plugin integration
-              & responsive design. Top-notch solutions delivery.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+              magni quaerat veniam, molestiae earum magnam blanditiis nisi quis
+              corrupti id!
             </p>
 
             <div class="services__border"></div>
@@ -475,13 +363,14 @@
           <div class="services__card">
             <i class="ri-code-line"></i>
             <h2 class="services__title">
-              Website <br />
-              Development
+              Kreateng <br />
+              Bootcamp
             </h2>
 
             <p class="services__description">
-              Skilled frontend developer. Proficient in HTML, CSS, JS & React.
-              Delivering exceptional web experiences confidently.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              qui consectetur quia ad nam perspiciatis eligendi corporis vitae
+              eos laborum?
             </p>
 
             <div class="services__border"></div>
@@ -491,13 +380,14 @@
           <div class="services__card">
             <i class="ri-quill-pen-line"></i>
             <h2 class="services__title">
-              Graphics <br />
-              Design
+              Kreateng <br />
+              Bootcamp
             </h2>
 
             <p class="services__description">
-              Talented graphics designer. Creative visuals. Crafting designs
-              with confidence and flair.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              dolorem dicta ut nihil magnam harum officia sapiente nam dolore
+              consequuntur!
             </p>
 
             <div class="services__border"></div>
@@ -505,166 +395,151 @@
         </div>
       </section>
 
-      <!--  PROJECTS  -->
+      <!--  TESTIMONIAL  -->
 
-      <section class="projects section" id="projects">
-        <h2 class="section__title">Projects</h2>
-        <span class="section__subtitle">Most recent work</span>
+      <section class="projects section" id="testimonial">
+        <h2 class="section__title">Testimonial video</h2>
+        <span class="section__subtitle">Our Most recent Graduates</span>
 
         <div class="container section__border">
           <div class="projects__container swiper">
             <div class="swiper-wrapper">
               <!-- Projects 1 -->
               <div class="projects__content swiper-slide">
-                <img
-                  src="assets/img/homi-sofa-mobile-desktop.png"
-                  alt="projects image"
-                  class="projects__img"
-                />
-                <div>
-                  <span class="projects__subtitle">homi-sofa</span>
-                  <h1 class="projects__title">Modern Website</h1>
+                <video
+                  controls="controls"
+                  preload="none"
+                  width="350"
+                  height="260"
+                  class="img grid"
+                >
+                  <source src="" type="video/mp4" class="project__img" />
+                </video>
 
-                  <a
-                    href="https://homi-sofa.netlify.app"
-                    target="_blank"
-                    class="projects__button"
-                  >
-                    View demo <i class="ri-arrow-right-line"></i>
+                <div>
+                  <span class="projects__subtitle">BabaTunde Ajao</span>
+                  <h1 class="projects__title">Product Designer</h1>
+
+                  <a href="#" target="_blank" class="projects__button">
+                    Watch Video <i class="ri-arrow-right-line"></i>
                   </a>
 
                   <marquee
                     behavior=""
                     direction=""
                     class="projects__description"
-                    >A responsive furniture template crafted with Tailwind CSS,
-                    showcasing contemporary designs and ensuring a visually
-                    appealing browsing experience on all devices.
+                    >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Natus nisi odio, blanditiis temporibus tempora libero optio
+                    totam dolor. Labore sit facilis eius, fugit odio commodi
+                    error, culpa quis nostrum distinctio dolore maxime corrupti
+                    reiciendis quod laborum harum inventore dicta assumenda!
                   </marquee>
                 </div>
               </div>
 
               <!-- Projects 2 -->
-              <div class="projects__content swiper-slide">
-                <img
-                  src="assets/img/cart2shop-mobile-desktop.png"
-                  alt="projects image"
-                  class="projects__img"
-                />
-                <div>
-                  <span class="projects__subtitle">cart2shop</span>
-                  <h1 class="projects__title">Ecommerce Store</h1>
 
-                  <a
-                    href="https://cart2shop.netlify.app"
-                    target="_blank"
-                    class="projects__button"
-                  >
-                    View demo <i class="ri-arrow-right-line"></i>
+              <div class="projects__content swiper-slide">
+                <video
+                  controls="controls"
+                  preload="none"
+                  width="350"
+                  height="260"
+                  class="img grid"
+                >
+                  <source src="" type="video/mp4" class="project__img" />
+                </video>
+
+                <div>
+                  <span class="projects__subtitle">BabaTunde Ajao</span>
+                  <h1 class="projects__title">Product Designer</h1>
+
+                  <a href="#" target="_blank" class="projects__button">
+                    Watch Video <i class="ri-arrow-right-line"></i>
                   </a>
 
                   <marquee
                     behavior=""
                     direction=""
                     class="projects__description"
-                    >An eCommerce clothing webstore template offering a wide
-                    selection of trendy and stylish apparel, providing an
-                    enjoyable and seamless shopping experience for fashion
-                    enthusiasts.
+                    >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Natus nisi odio, blanditiis temporibus tempora libero optio
+                    totam dolor. Labore sit facilis eius, fugit odio commodi
+                    error, culpa quis nostrum distinctio dolore maxime corrupti
+                    reiciendis quod laborum harum inventore dicta assumenda!
                   </marquee>
                 </div>
               </div>
 
               <!-- Projects 3 -->
-              <div class="projects__content swiper-slide">
-                <img
-                  src="assets/img/currency2crypto-mobile-tab.png"
-                  alt="projects image"
-                  class="projects__img"
-                />
-                <div>
-                  <span class="projects__subtitle">currency2crypto </span>
-                  <h1 class="projects__title">Crypto Converter</h1>
 
-                  <a
-                    href="https://currency2crypto.netlify.app"
-                    target="_blank"
-                    class="projects__button"
-                  >
-                    View demo <i class="ri-arrow-right-line"></i>
+              <div class="projects__content swiper-slide">
+                <video
+                  controls="controls"
+                  preload="none"
+                  width="350"
+                  height="260"
+                  class="img grid"
+                >
+                  <source src="" type="video/mp4" class="project__img" />
+                </video>
+
+                <div>
+                  <span class="projects__subtitle">BabaTunde Ajao</span>
+                  <h1 class="projects__title">Product Designer</h1>
+
+                  <a href="#" target="_blank" class="projects__button">
+                    Watch Video <i class="ri-arrow-right-line"></i>
                   </a>
 
                   <marquee
                     behavior=""
                     direction=""
                     class="projects__description"
-                    >A JavaScript app for converting cryptocurrencies to various
-                    currencies, simplifying and streamlining currency exchange.
+                    >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Natus nisi odio, blanditiis temporibus tempora libero optio
+                    totam dolor. Labore sit facilis eius, fugit odio commodi
+                    error, culpa quis nostrum distinctio dolore maxime corrupti
+                    reiciendis quod laborum harum inventore dicta assumenda!
                   </marquee>
                 </div>
               </div>
 
               <!-- Projects 4 -->
-              <div class="projects__content swiper-slide">
-                <img
-                  src="assets/img/dog-infinite-mobile-tab.png"
-                  alt="projects image"
-                  class="projects__img"
-                />
-                <div>
-                  <span class="projects__subtitle">Dog Infinite App</span>
-                  <h1 class="projects__title">Dog Identifier</h1>
 
-                  <a
-                    href="https://dog-infinite-app.netlify.app"
-                    target="_blank"
-                    class="projects__button"
-                  >
-                    View demo <i class="ri-arrow-right-line"></i>
+              <div class="projects__content swiper-slide">
+                <video
+                  controls="controls"
+                  preload="none"
+                  width="350"
+                  height="260"
+                  class="img grid"
+                >
+                  <source src="" type="video/mp4" class="project__img" />
+                </video>
+
+                <div>
+                  <span class="projects__subtitle">BabaTunde Ajao</span>
+                  <h1 class="projects__title">Product Designer</h1>
+
+                  <a href="#" target="_blank" class="projects__button">
+                    Watch Video <i class="ri-arrow-right-line"></i>
                   </a>
 
                   <marquee
                     behavior=""
                     direction=""
                     class="projects__description"
-                  >
-                    A JavaScript app displaying various dog images according to
-                    the selected breed, providing an enjoyable and educational
-                    experience for dog lovers.
+                    >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Natus nisi odio, blanditiis temporibus tempora libero optio
+                    totam dolor. Labore sit facilis eius, fugit odio commodi
+                    error, culpa quis nostrum distinctio dolore maxime corrupti
+                    reiciendis quod laborum harum inventore dicta assumenda!
                   </marquee>
                 </div>
               </div>
 
               <!-- Projects 5 -->
-              <div class="projects__content swiper-slide">
-                <img
-                  src="assets/img/taskScape-mobile-desktop.png"
-                  alt="projects image"
-                  class="projects__img"
-                />
-                <div>
-                  <span class="projects__subtitle">taskscape </span>
-                  <h1 class="projects__title">Think Pad</h1>
-
-                  <a
-                    href="https://taskscape.netlify.app"
-                    target="_blank"
-                    class="projects__button"
-                  >
-                    View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-
-                  <marquee
-                    behavior=""
-                    direction=""
-                    class="projects__description"
-                    >A comprehensive JavaScript Task app with a database that
-                    enables users to add, edit, and delete notes securely,
-                    providing an efficient and user-friendly note-taking
-                    experience.
-                  </marquee>
-                </div>
-              </div>
             </div>
 
             <!-- Swiper Arrows -->
@@ -681,9 +556,9 @@
 
       <!--  TESTIMONIAL  -->
 
-      <section class="testimonial section">
+      <section class="testimonial section" id="testimonial">
         <h2 class="section__title">Testimonial</h2>
-        <span class="section__subtitle">My client saying</span>
+        <span class="section__subtitle">Words from our Graduates</span>
 
         <div class="container section__border">
           <div class="testimonial__container swiper">
@@ -691,41 +566,46 @@
               <!-- Testimonial 1 -->
               <div class="testimonial__content swiper-slide">
                 <p class="testimonial__description">
-                  Mr Coder, Tech Bro... coding genius! You're on fire! Leave
-                  some coding fun for the rest of us. Don't kill us with skills!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  rem omnis laudantium odio quisquam voluptate voluptatibus at
+                  voluptatem dolores recusandae, sapiente corporis aperiam
+                  dolorem pariatur voluptas. Earum temporibus iusto deleniti!
                   👍😄”
                 </p>
 
                 <div>
-                  <h3 class="testimonial__name">Akachi</h3>
-                  <span class="testimonial__subtitle">Friend</span>
+                  <h3 class="testimonial__name">Name</h3>
+                  <span class="testimonial__subtitle">Student</span>
                 </div>
               </div>
 
               <!-- Testimonial 2 -->
               <div class="testimonial__content swiper-slide">
                 <p class="testimonial__description">
-                  “You're doing fantastic as a developer! Your progress makes me
-                  proud, and I'm here cheering you on. Keep it up, and let's
-                  keep conquering new coding challenges together! 🚀👍”
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Laborum quae nam quod atque temporibus quaerat aspernatur
+                  vitae quo rerum. Debitis neque id magnam, cum esse distinctio
+                  adipisci rerum omnis vero. 🚀👍”
                 </p>
 
                 <div>
-                  <h3 class="testimonial__name">Isiaka</h3>
-                  <span class="testimonial__subtitle">Mentor</span>
+                  <h3 class="testimonial__name">NAme</h3>
+                  <span class="testimonial__subtitle">Graduate</span>
                 </div>
               </div>
 
               <!-- Testimonial 3 -->
               <div class="testimonial__content swiper-slide">
                 <p class="testimonial__description">
-                  “Men, working with you is fun. I'll hit you up when next I
-                  have a project to wreck 🦾🧠👥”
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ducimus quam pariatur molestias voluptas reiciendis nemo, et
+                  sapiente autem eaque omnis? Nihil ipsum repudiandae
+                  repellendus? Harum soluta vel optio assumenda maiores. 🦾🧠👥”
                 </p>
 
                 <div>
-                  <h3 class="testimonial__name">Chuks</h3>
-                  <span class="testimonial__subtitle">Team</span>
+                  <h3 class="testimonial__name">Name</h3>
+                  <span class="testimonial__subtitle">Staff</span>
                 </div>
               </div>
             </div>
@@ -747,118 +627,143 @@
         />
       </section>
 
-      <!--  CONTACT  -->
+      <!--  PARTNER  -->
 
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
+      <section class="partner section" id="partner">
+        <!-- Partner Hero -->
 
-        <div class="contact__container container grid section__border">
-          <!-- Contact Content -->
-          <div class="contact__content">
-            <h3 class="contact__title">
-              <i class="ri-chat-3-line"></i> Talk to me
-            </h3>
+        <div class="partner__hero__container container">
+          <div class="partner__hero__png">
+            <img
+              src="./kreateng/dummy 1.png"
+              class="partner__png"
+              alt="Engineer
+            Image"
+            />
+            <img src="./kreateng/dummy 1.png" class="partner__png" "Engineer
+            Image"> <img src="./kreateng/dummy 1.png" class="partner__png"
+            "Engineer Image">
+            <img
+              src="./kreateng/dummy 1.png"
+              class="partner__png"
+              alt="Engineer Image"
+            />
+          </div>
+          <p>Over 1000 <span>Engineers trained</span></p>
+        </div>
 
-            <div class="contact__info">
-              <div class="contact__data">
-                <span class="contact__data-title"
-                  ><i class="ri-mail-line mail"></i> Email</span
-                >
-                <span class="contact__data-info"
-                  >gaffar.ibrahim18@gmail.com</span
-                >
+        <h2 class="section__title">Our Educational Partners</h2>
+        <span class="section__subtitle"
+          >At Kreateng Institute, we take pride in ensuring we provide the best
+          local and global educational partners for our students.</span
+        >
+
+        <div class="partner__container container grid section__border">
+          <!-- Partner Content -->
+          <div class="partner__content">
+            <div class="partner__section">
+              <div class="card__partner">
+                <img
+                  class="partner__svg"
+                  src="kreateng/atlassian.svg"
+                  alt="partners png"
+                />
               </div>
-
-              <div class="contact__data">
-                <span class="contact__data-title"
-                  ><i class="ri-whatsapp-line whatsapp"></i> WhatsApp</span
-                >
-                <span class="contact__data-info">+234-8151-106-939</span>
-
-                <a
-                  href="https://wa.me/2348151106939"
-                  class="contact__button"
-                  target="_blank"
-                  >Write me
-                  <i class="ri-edit-2-line"></i>
-                </a>
+              <div class="card__partner">
+                <img
+                  class="partner__svg"
+                  src="kreateng/github-2.svg"
+                  alt="partners png"
+                />
               </div>
-
-              <div class="contact__data">
-                <span class="contact__data-title"
-                  ><i class="ri-linkedin-box-line linkedin"></i> Linkedin</span
-                >
-                <span class="contact__data-info">Gaffar</span>
-
-                <a
-                  href="https://www.linkedin.com/in/ibrahimgaffar-frontenddev"
-                  class="contact__button"
-                  target="_blank"
-                >
-                  Write me <i class="ri-edit-2-line"></i>
-                </a>
+              <div class="card__partner">
+                <img
+                  class="partner__svg"
+                  src="kreateng/microsoft-6.svg"
+                  alt="partners png"
+                />
+              </div>
+              <div class="card__partner">
+                <img
+                  class="partner__svg"
+                  src="kreateng/vodafone-one.svg"
+                  alt="partners png"
+                />
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <!-- CONTACT FORM INPUT FIELD -->
+      <!-- ========= FAQ ========== -->
 
-          <div class="contact__content">
-            <h3 class="contact__title">
-              <i class="ri-send-plane-line"></i> Write me your project
-            </h3>
+      <section class="faq section" id="faq">
+        <!-- faq hero -->
+        <div class="faq__bg">
+          <p>Ready to become a Kreateng dev?</p>
+          <button>Apply Now</button>
+        </div>
 
-            <form
-              action="https://formspree.io/f/mgejvrqe"
-              class="contact__form"
-              id="contact-form"
-              method="POST"
-            >
-              <!-- contact form name -->
-              <div class="contact__form-div">
-                <label for="" class="contact__form-tag">Name</label>
-                <input
-                  type="text"
-                  name="user_name"
-                  required
-                  placeholder="Write your names"
-                  class="contact__form-input"
-                  id="contact-name"
-                />
-              </div>
+        <!-- ======= Faq summary & details sectiion ======== -->
 
-              <!-- contact form email -->
-              <div class="contact__form-div">
-                <label for="" class="contact__form-tag">Email</label>
-                <input
-                  type="email"
-                  name="user_email"
-                  required
-                  placeholder="@gmail.com"
-                  class="contact__form-input"
-                  id="contact-email"
-                />
-              </div>
-
-              <!-- contact form project -->
-              <div class="contact__form-div contact__form-area">
-                <label for="" class="contact__form-tag">Project</label>
-                <textarea
-                  type="text"
-                  name="user_project"
-                  required
-                  placeholder="Write your project"
-                  class="contact__form-input"
-                  id="contact-project"
-                ></textarea>
-              </div>
-
-              <!-- contact form button -->
-              <button type="submit" class="contact__button">
-                Send <i class="ri-mail-send-line"></i>
-              </button>
-            </form>
+        <div class="container section__border">
+          <div class="main-container">
+            <details id="details1" onclick="toggleDetails('details1')">
+              <summary>Can you tell me about Kreateng?</summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi animi aliquam accusamus sed voluptas sapiente quod
+                dolores, illo impedit perferendis a eaque pariatur ex possimus
+                nesciunt dolore placeat doloribus modi!
+              </p>
+            </details>
+            <details id="details2" onclick="toggleDetails('details2')">
+              <summary>Why Apply for Kreateng Training Program?</summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi animi aliquam accusamus sed voluptas sapiente quod
+                dolores, illo impedit perferendis a eaque pariatur ex possimus
+                nesciunt dolore placeat doloribus modi!
+              </p>
+            </details>
+            <details id="details3" onclick="toggleDetails('details3')">
+              <summary>I don't have a B.Sc degree, can I apply?</summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi animi aliquam accusamus sed voluptas sapiente quod
+                dolores, illo impedit perferendis a eaque pariatur ex possimus
+                nesciunt dolore placeat doloribus modi!
+              </p>
+            </details>
+            <details id="details4" onclick="toggleDetails('details4')">
+              <summary>
+                Is Kreateng Open to Current Undergraduates or NYSC Members?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi animi aliquam accusamus sed voluptas sapiente quod
+                dolores, illo impedit perferendis a eaque pariatur ex possimus
+                nesciunt dolore placeat doloribus modi!
+              </p>
+            </details>
+            <details id="details5" onclick="toggleDetails('details5')">
+              <summary>How long is the training program for?</summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi animi aliquam accusamus sed voluptas sapiente quod
+                dolores, illo impedit perferendis a eaque pariatur ex possimus
+                nesciunt dolore placeat doloribus modi!
+              </p>
+            </details>
+            <details id="details6" onclick="toggleDetails('details6')">
+              <summary>What are the benefits of the program?</summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi animi aliquam accusamus sed voluptas sapiente quod
+                dolores, illo impedit perferendis a eaque pariatur ex possimus
+                nesciunt dolore placeat doloribus modi!
+              </p>
+            </details>
           </div>
         </div>
       </section>
@@ -869,12 +774,12 @@
     <footer class="footer">
       <div class="footer__container container">
         <img
-          src="./assets/img/gaffOverflow.png"
+          src="./kreateng/kreateng-logo-png-small.png"
           alt="logo"
           class="footer__title"
         />
 
-        <p>Frontend Development</p>
+        <p>Kreateng BootCamp</p>
 
         <ul class="footer__list">
           <!-- Footer List 1 -->
@@ -884,30 +789,23 @@
 
           <!-- Footer List 2 -->
           <li>
-            <a href="#skills" class="footer__link">Skills</a>
+            <a href="#about__us" class="footer__link">About</a>
           </li>
 
           <!-- Footer List 3 -->
           <li>
-            <a href="#projects" class="footer__link">Projects</a>
+            <a href="#testimonial" class="footer__link">Testimonial</a>
           </li>
         </ul>
 
         <ul class="footer__social">
-          <a
-            href="www.linkedin.com/in/IbrahimGaffar-frontendDev"
-            target="_blank"
-            class="footer__social-link"
-          >
+          <a href="#" target="_blank" class="footer__social-link">
             <i class="ri-linkedin-box-line"></i>
           </a>
-          <a
-            href="https://www.github.com/gaffOverflow"
-            class="footer__social-link"
-          >
+          <a href="#" class="footer__social-link">
             <i class="ri-github-line"></i>
           </a>
-          <a href="https://codepen.io/gaffOverflow" class="footer__social-link">
+          <a href="#" class="footer__social-link">
             <i class="ri-codepen-line"></i>
           </a>
         </ul>
