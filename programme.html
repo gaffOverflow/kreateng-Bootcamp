@@ -64,6 +64,7 @@
     <link rel="stylesheet" href="css/programme.css" />
 
     <title>Kreateng Bootcamp</title>
+    <script src="./js/programme.js" defer></script>
   </head>
 
   <body>
@@ -255,21 +256,21 @@
               <div class="curriculum__card">
                 <img src="./kreateng/java-svg.svg" alt="java Image" />
                 <p>Java Stack</p>
-                <button>
+                <button onclick="toggleModal(modal1)">
                   View Curriculum <i class="ri-arrow-right-line"></i>
                 </button>
               </div>
               <div class="curriculum__card">
                 <img src="./kreateng/node-svg.svg" alt="Node Image" />
                 <p>Node Stack</p>
-                <button>
+                <button onclick="toggleModal(modal2)">
                   View Curriculum <i class="ri-arrow-right-line"></i>
                 </button>
               </div>
               <div class="curriculum__card">
                 <img src="./kreateng/net-svg.svg" alt="Net Image" />
                 <p>.Net Stack</p>
-                <button>
+                <button onclick="toggleModal(modal3)">
                   View Curriculum <i class="ri-arrow-right-line"></i>
                 </button>
               </div>
@@ -424,8 +425,10 @@
             <div class="financing__data grid">
               <h1>Flexible Financing Options</h1>
               <div class="financing__data__buttons">
-                <button id="financing-button-one">Self SponsorShip</button>
-                <button id="financing-button-two">
+                <button id="financing-button-one" onclick="toggle(false)">
+                  Self SponsorShip
+                </button>
+                <button id="financing-button-two" onclick="toggle(true)">
                   Learn-Then-Earn (LTE) payment credit
                 </button>
               </div>
@@ -597,6 +600,224 @@
         <span class="footer__copy"> &copy; Gaff 2023 </span>
       </div>
     </footer>
+
+    <!--===== JAVA CURRICULUM MODALS =====-->
+
+    <div class="curriculum__modal" id="modal1" style="display: none;">
+      <div class="">
+        <i class="ri-close-line" onclick="toggleModal(modal1)"></i>
+
+        <table cellspacing="20px">
+          <tbody>
+            <tr>
+              <td colspan="2" style="border: none">
+                <h1 style="text-align: center">JAVA CURRICULUM</h1>
+              </td>
+            </tr>
+
+            <!-- Row -->
+
+            <tr>
+              <th>TIME</th>
+              <th>ACTIVITY</th>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>9am - 11am</th>
+              <td>
+                <h1>Instructor Led Class</h1>
+                <p>
+                  Get guidance, feedback, and more from experts who are
+                  dedicated to supporting your learning and career goals.
+                </p>
+              </td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>11am - 12 pm</th>
+              <td><h1>Break</h1></td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>12pm - 2pm</th>
+              <td>
+                <h1>Algorithms</h1>
+                <p>
+                  Student should be proficient in algorithms, to help them solve
+                  real life problems.
+                </p>
+              </td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>2pm - 3pm</th>
+              <td><h1>Break</h1></td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>3pm - 6pm</th>
+              <td>
+                <h1>Project/Task Deliverables</h1>
+                <p>
+                  You will be able to create an amazing portfolio that showcases
+                  your skills and experience.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--===== NODE CURRICULUM MODALS =====-->
+
+    <div class="curriculum__modal" id="modal2" style="display: none;">
+      <div class="">
+        <i class="ri-close-line" onclick="toggleModal(modal2)"></i>
+
+        <table cellspacing="20px">
+          <tbody>
+            <tr>
+              <td colspan="2" style="border: none">
+                <h1 style="text-align: center">NODE CURRICULUM</h1>
+              </td>
+            </tr>
+
+            <!-- Row -->
+
+            <tr>
+              <th>TIME</th>
+              <th>ACTIVITY</th>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>9am - 11am</th>
+              <td>
+                <h1>Instructor Led Class</h1>
+                <p>
+                  Get guidance, feedback, and more from experts who are
+                  dedicated to supporting your learning and career goals.
+                </p>
+              </td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>11am - 12 pm</th>
+              <td><h1>Break</h1></td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>12pm - 2pm</th>
+              <td>
+                <h1>Algorithms</h1>
+                <p>
+                  Student should be proficient in algorithms, to help them solve
+                  real life problems.
+                </p>
+              </td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>2pm - 3pm</th>
+              <td><h1>Break</h1></td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>3pm - 6pm</th>
+              <td>
+                <h1>Project/Task Deliverables</h1>
+                <p>
+                  You will be able to create an amazing portfolio that showcases
+                  your skills and experience.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!--===== .NET CURRICULUM MODALS =====-->
+
+    <div class="curriculum__modal" id="modal3" style="display: none;">
+      <div class="">
+        <i class="ri-close-line" onclick="toggleModal(modal3)"></i>
+
+        <table cellspacing="20px">
+          <tbody>
+            <tr>
+              <td colspan="2" style="border: none">
+                <h1 style="text-align: center">.NET CURRICULUM</h1>
+              </td>
+            </tr>
+
+            <!-- Row -->
+
+            <tr>
+              <th>TIME</th>
+              <th>ACTIVITY</th>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>9am - 11am</th>
+              <td>
+                <h1>Instructor Led Class</h1>
+                <p>
+                  Get guidance, feedback, and more from experts who are
+                  dedicated to supporting your learning and career goals.
+                </p>
+              </td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>11am - 12 pm</th>
+              <td><h1>Break</h1></td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>12pm - 2pm</th>
+              <td>
+                <h1>Algorithms</h1>
+                <p>
+                  Student should be proficient in algorithms, to help them solve
+                  real life problems.
+                </p>
+              </td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>2pm - 3pm</th>
+              <td><h1>Break</h1></td>
+            </tr>
+            <!-- Row -->
+
+            <tr>
+              <th>3pm - 6pm</th>
+              <td>
+                <h1>Project/Task Deliverables</h1>
+                <p>
+                  You will be able to create an amazing portfolio that showcases
+                  your skills and experience.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
     <!--===== SCROLL UP =====-->
 

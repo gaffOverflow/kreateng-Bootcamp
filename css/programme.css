@@ -175,7 +175,7 @@ body.dark-theme {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -443,6 +443,40 @@ body.dark-theme {
 
 /*=============== MODAL ===============*/
 
+.curriculum__modal {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  inset: 0 0 0 0;
+  overflow-y: scroll;
+  z-index: 1000;
+  /* display: none; */
+  justify-content: center;
+  align-items: center;
+}
+
+.curriculum__modal::-webkit-scrollbar{
+  display: none;
+}
+
+.curriculum__modal div {
+  background: var(--body-color);
+  margin: var(--biggest-font-size);
+  position: relative;
+}
+
+.curriculum__modal i {
+  background: var(--container-color);
+  font-size: var(--h3-font-size);
+  padding: .6em;
+  border-radius: 50%;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+/*=============== TABLE ===============*/
+
 table td {
   border: 3px solid var(--container-color);
   padding: 1rem;
@@ -556,7 +590,7 @@ table th {
   line-height: 1.5rem;
 }
 
-.financing__data__content h3{
+.financing__data__content h3 {
   padding-block: 1rem;
 }
 
@@ -566,7 +600,7 @@ table th {
   padding-left: 1.5rem;
 }
 
-.financing__data__content div ul li::marker{
+.financing__data__content div ul li::marker {
   display: block;
 }
 

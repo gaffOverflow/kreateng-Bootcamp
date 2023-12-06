@@ -5,10 +5,7 @@ const navLink = document.querySelectorAll(".nav__link");
 const sections = document.querySelectorAll("section");
 const video = document.querySelector("video");
 const videoContainer = document.querySelector(".video__container");
-const financeBtn = document.querySelector("#financing-button-one");
-const financeBtn2 = document.getElementById("financing-button-two");
-const financeData = document.querySelector(".financing__data__content p");
-const financeData2 = document.querySelector(".financing__data__content div");
+
 
 /*=============== VIDEO RESPONSIVENESS ===============*/
 
@@ -22,10 +19,6 @@ window.addEventListener("resize", () => {
 });
 
 /*=============== TOGGLE FINANCE DATA ===============*/
-
-// financeBtn2.addEventListener("click", () => {
-//   financeData2.classList.toggle("hidden")
-// })
 
 
 
@@ -149,7 +142,7 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/ 
+/*=============== CHANGE BACKGROUND HEADER ===============*/
 
 const scrollHeader = () => {
   const header = document.getElementById("header");
