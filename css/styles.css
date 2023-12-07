@@ -63,10 +63,10 @@
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 3rem;
-     --h1-font-size: 2rem;
+    --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
-    --normal-font-size: .8rem;
+    --normal-font-size: 0.8rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
     --tiny-font-size: 0.688rem;
@@ -200,7 +200,6 @@ body.dark-theme {
 
 .section {
   padding-block: 1rem;
-
 }
 
 .section__border {
@@ -892,6 +891,80 @@ details > p {
   padding-inline: 1.5rem;
 }
 
+/*=============== COMMUNITY ===============*/
+
+.section__community {
+  margin-top: 40px;
+  text-align: left;
+  justify-content: center;
+}
+
+.temp {
+  display: relative;
+  background: var(--primary-color);
+}
+.left_card {
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 200px;
+}
+.side-list {
+  box-shadow: 0px 2px 0.2rem rgba(0, 0, 0, 0.2);
+  /* margin-top: 30px; */
+  padding: 18px;
+  justify-content: start;
+  background: var(--gradient-color);
+  margin-bottom: 15px;
+}
+.right_card {
+  border-radius: 8px;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+.nav-list {
+  list-style: none;
+  padding: 5px;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  text-align: left;
+  color: #fff;
+}
+a:hover {
+  color: var(--secondary-color);
+  transition: 0.4s;
+}
+.sub_card {
+  width: 100%;
+  box-shadow: 0px 2px 0.2rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  padding: 8px;
+  font-size: var(--small-font-size);
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-bottom: 15px;
+}
+.sub_card_list {
+  list-style: number;
+  font-size: 15px;
+  padding: 5px;
+  font-size: var(--small-font-size);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+.top-text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 0.1px solid #b1aeae;
+  margin-bottom: 15px;
+  font-size: var(--normal-font-size);
+}
+
 /*=============== FOOTER ===============*/
 
 .footer__container {
@@ -1169,6 +1242,10 @@ details > p {
     font-size: var(--normal-font-size);
   }
 
+  .main {
+    overflow: visible; /* For animation */
+  }
+
   .dark-theme .nav,
   .dark-theme .nav__menu {
     background: var(--body-color);
@@ -1208,6 +1285,37 @@ details > p {
   .dark-theme .bg-header {
     box-shadow: 0 6px 24px hsla(207, 24%, 8%, 0.6);
   }
+
+  /* ========= COMMUNITY ========= */
+
+  .section__community {
+    margin-top: 100px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* position: flex; */
+  }
+  .right_card {
+    width: 50%;
+    padding-bottom: 50px;
+  }
+
+  .left_card {
+    width: 40%;
+    position: sticky;
+    top: 5%;
+    height: 250px;
+  }
+
+  .side-list {
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .nav-list {
+    padding: 30px;
+    border-bottom: 0.1px solid #b1aeae;
+    margin-top: 15px;
+  }
 }
 
 /* 1048 breakpoint */
@@ -1221,6 +1329,7 @@ details > p {
 /* 1200 breakpoint */
 
 @media screen and (min-width: 1200px) {
+
   .section__border {
     padding-bottom: 6rem;
   }
